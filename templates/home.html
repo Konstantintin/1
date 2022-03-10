@@ -6,8 +6,8 @@
     <h1>This is home page</h1>
     {{greeting}}
     <br><br>
-    <form>
-        <textarea clos="50" row="10" name="user"></textarea>
+    <form action="{% url 'reverse' %}">
+        <textarea clos="50" row="10" name="usertext"></textarea>
         <br><br>
         <input type="submit" value="Reverse!">
     </form>
@@ -15,4 +15,4 @@
 <body>
 
 </body>
-</html> 
+</html>
